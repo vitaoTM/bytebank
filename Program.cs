@@ -1,4 +1,6 @@
 ﻿using bytebank;
+using bytebank.contas;
+using bytebank.titular;
 
 ContaCorrente contaDoVitor = new ContaCorrente();
 
@@ -14,17 +16,15 @@ contaDaJecika.numero_agencia  = 1123;
 contaDaJecika.conta = "18542-x"
 contaDaJecika.saldo = 10000.1;
 
-Cliente vitor = new Cliente();
-Cliente.nome = "Vitor Grosskopf";
-Cliente.cpf = "01425232111";
-Cliente.profissao = "Tecnico de Informatica";
- 
-ContaCorrente conta2 = new ContaCorrente();
-conta2.titular = vitor;
-conta2.conta = "1010-x";
-conta2.numero_agencia = 1254;
-conta2.saldo = 17541;
+ContaCorrente conta3 = new ContaCorrente();
+conta3.titular = new Cliente();
 
+conta3.titular.nome = "José da Silva";
+conta3.titular.cpf = "14202565789";
+conta3.titular.profissao = "Engenheiro de Dados";
+conta3.conta = "1474-x";
+conta3.numero_agencia = 415;
+conta3.saldo = 410.45;
 
 System.Console.WriteLine($"Titular {conta2.titular.nome}");
 System.Console.WriteLine($"Conta {conta2.titular.conta}");
@@ -32,6 +32,19 @@ System.Console.WriteLine($"cpf {conta2.titular.cpf}");
 System.Console.WriteLine($"Profissao {conta2.titular.profissao}");
 System.Console.WriteLine($"Numero da agencia {conta2.titular.numero_agencia}");
 System.Console.WriteLine($"Saldo {conta2.titular.saldo}");
+
+
+
+// Cliente vitor = new Cliente();
+// Cliente.nome = "Vitor Grosskopf";
+// Cliente.cpf = "01425232111";
+// Cliente.profissao = "Tecnico de Informatica";
+ 
+// ContaCorrente conta2 = new ContaCorrente();
+// conta2.titular = vitor;
+// conta2.conta = "1010-x";
+// conta2.numero_agencia = 1254;
+// conta2.saldo = 17541;
 
 // Console.WriteLine($"Saldo de {contaDaJecika.titular} na conta {contaDaJecika.conta}, é de {contaDaJecika.saldo}");
 // Console.WriteLine($"Saldo de {contaDoVitor.titular} na conta {contaDoVitor.conta}, é de {contaDoVitor.saldo}");
