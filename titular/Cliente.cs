@@ -1,4 +1,4 @@
-namespace bytebank
+namespace bytebank.titular
 {
     public class Cliente
     {
