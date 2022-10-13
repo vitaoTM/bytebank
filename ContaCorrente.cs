@@ -8,8 +8,16 @@ namespace bytebank
 {
     public class ContaCorrente
     {
-        public string identidate;
-        
+        public string conta;
+        public int numero_agencia;
+        public string titular;
+        public double saldo;
+
+        public void Depositar(double valor)
+        {
+            this.
+        }
+
         
     }
 }
