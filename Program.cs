@@ -32,6 +32,7 @@ System.Console.WriteLine($"cpf {conta2.titular.cpf}");
 System.Console.WriteLine($"Profissao {conta2.titular.profissao}");
 System.Console.WriteLine($"Numero da agencia {conta2.titular.numero_agencia}");
 System.Console.WriteLine($"Saldo {conta2.titular.saldo}");
+
 // Console.WriteLine($"Saldo de {contaDaJecika.titular} na conta {contaDaJecika.conta}, é de {contaDaJecika.saldo}");
 // Console.WriteLine($"Saldo de {contaDoVitor.titular} na conta {contaDoVitor.conta}, é de {contaDoVitor.saldo}");
 
