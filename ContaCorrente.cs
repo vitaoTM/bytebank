@@ -8,9 +8,9 @@ namespace bytebank
 {
     public class ContaCorrente
     {
+        public Cliente titular;
         public string conta;
         public int numero_agencia;
-        public string titular;
         public double saldo;
 
         public void Depositar(double valor)
