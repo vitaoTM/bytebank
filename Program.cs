@@ -4,6 +4,16 @@ using bytebank.Titular;
 using bytebank.Funcionarios;
 
 
+Funcionario joao = new Funcionario();
+joao.Nome = "Joao Pedro"
+joao.Cpf = "89665841202"
+joao.Salario = 2000
+
+Console.WriteLine($"Bonificação de {joao.getBonificacao()}")
+
+
+
+
 ContaCorrente contaDoVitor = new ContaCorrente();
 
 contaDoVitor.titular = "Vitor Grosskopf";
