@@ -2,6 +2,7 @@
 using bytebank.Contas;
 using bytebank.Titular;
 using bytebank.Funcionarios;
+using bytebank.Utilitarios;
 
 
 Funcionario joao = new Funcionario();
@@ -11,6 +12,16 @@ joao.Salario = 2000
 
 Console.WriteLine($"Bonificação de {joao.getBonificacao()}")
 
+Diretor paula = new Diretor();
+paula.Nome = "Paula";
+paula.Cpf = "97544658201";
+paula.Salario = 5000;
+ 
+GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+
+gerenciador.Registrar(joao);
+
+Console.WriteLine($"Total de bonificação {gerenciador.getBonificacao()} ")
 
 
 
