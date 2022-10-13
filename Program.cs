@@ -1,6 +1,8 @@
 ﻿using bytebank;
-using bytebank.contas;
-using bytebank.titular;
+using bytebank.Contas;
+using bytebank.Titular;
+using bytebank.Funcionarios;
+
 
 ContaCorrente contaDoVitor = new ContaCorrente();
 
