@@ -12,7 +12,7 @@ joao.Salario = 2000
 
 Console.WriteLine($"Bonificação de {joao.getBonificacao()}")
 
-Diretor paula = new Diretor();
+Funcionario paula = new Diretor();
 paula.Nome = "Paula";
 paula.Cpf = "97544658201";
 paula.Salario = 5000;

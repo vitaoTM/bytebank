@@ -8,12 +8,12 @@ namespace bytebank.Utilitarios
             this.totalBonificacao += Funcionario.getBonificacao();
         }
 
-        public void Diretor (Diretor diretor)
-        {
-            this.totalBonificacao += diretor.getBonificacao();
-        }
+        // public void Diretor (Diretor diretor)
+        // {
+        //     this.totalBonificacao += diretor.getBonificacao();
+        // }
 
-        public double getBonificacao();
+        public virtual double getBonificacao();
         {
             return this.totalBonificacao;
         }

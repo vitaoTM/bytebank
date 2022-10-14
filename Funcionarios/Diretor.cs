@@ -1,15 +1,11 @@
 namespace bytebank.Funcionarios
 {
-    public class Diretor
+    public class Diretor:Funcionario
     {
-        public string Nome { get; set; }          
-        public string Cpf { get; set; }
-        public double Salraio { get; set; }
-
-    public double getBonificacao()
-    {
-        return Salario * .1;  
-    }
+        public override double getBonificacao()
+        {
+            return Salario * .1;  
+        }
     
     }
 }
