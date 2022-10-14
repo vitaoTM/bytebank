@@ -4,7 +4,7 @@ namespace bytebank.Funcionarios
     {
         public override double getBonificacao()
         {
-            return Salario * .1;  
+            return Salario + base.getBonificacao();  
         }
     
     }
